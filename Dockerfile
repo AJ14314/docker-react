@@ -3,7 +3,7 @@ FROM node:10-alpine3.11
 
 WORKDIR '/app'
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm install
 #no need to use volume concept because code will not change in our prod container
